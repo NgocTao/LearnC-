@@ -1,1 +1,3 @@
-# LearnC-
+# LearnC
+
+Author: Tao
