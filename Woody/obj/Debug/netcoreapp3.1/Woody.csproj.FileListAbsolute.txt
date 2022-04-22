@@ -1,0 +1,17 @@
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Woody.exe
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Woody.deps.json
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Woody.runtimeconfig.json
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Woody.runtimeconfig.dev.json
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Woody.dll
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Woody.pdb
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.dll
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.pdb
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ADMIN\source\repos\Woody\Woody\obj\Debug\netcoreapp3.1\Woody.csproj.CopyComplete
+C:\Users\ADMIN\source\repos\Woody\Woody\bin\Debug\netcoreapp3.1\Resource\Puzzledata.json
