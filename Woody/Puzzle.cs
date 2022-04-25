@@ -8,24 +8,22 @@ namespace Woody
     {
         public string ID;
         public int[] Array;
-
     }
 
     public class Puzzle
     {
         public int Colums = 5;
         public int Rows = 5;
-        public Block[,] DataCell;
+        public Block[,] BlockData;
 
-
-        public Puzzle()
-        {
-        }
+        public int MinCot = 6;
+        public int MaxRow = -1;
 
         public void SetValuePuzz(int row, int colum, int value)
         {
-            DataCell[row, colum].value = value;
+            BlockData[row, colum].value = value;
         }
+
         public void ShowPuzz()
         {
             string str = "";
@@ -33,29 +31,37 @@ namespace Woody
             {
                 for (int j = 0; j < Colums; j++)
                 {
-                    str += DataCell[i, j].value.ToString() + " ";
+                    str += BlockData[i, j].value.ToString() + " ";
                 }
                 str += "\n";
             }
             Console.WriteLine(str);
         }
-        public Puzzle (PuzzleData dataPuzzle)
+
+        public Puzzle(PuzzleData dataPuzzle)
         {
-            DataCell = new Block[Rows, Colums];
+            BlockData = new Block[Rows, Colums];
             for (int i = 0; i < Rows; i++)
             {
                 for (int j = 0; j < Colums; j++)
                 {
-                    DataCell[i, j] = new Block();
-                    DataCell[i, j].value = 0;
+                    BlockData[i, j] = new Block();
+                    BlockData[i, j].value = 0;
                 }
             }
-            for (int i = 0; i < dataPuzzle.Array.Length ; i++)
+            
+            for (int i = 0; i < dataPuzzle.Array.Length; i++)
             {
-                int R = dataPuzzle.Array[i] / 5;
                 int C = dataPuzzle.Array[i] % 5;
+                if (C < MinCot)
+                    MinCot = C;
+                int R = dataPuzzle.Array[i] / 5;
+                if (R > MaxRow)
+                    MaxRow = R;
                 SetValuePuzz(R, C, 1);
             }
+            // SetValuePuzz(MaxRow, MinCot, 2);
+
         }
     }
 }

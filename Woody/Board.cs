@@ -39,6 +39,44 @@ namespace Woody
             }
             Console.WriteLine(str);
         }
+        public bool CheckLocation(Puzzle puzzle, int selectRow, int selectCol)
+        {
+            bool result = true;
+            for (int r = 0; r < puzzle.Rows; r++)
+            {
+                for (int c = 0; c < puzzle.Colums; c++)
+                {
+                    if (puzzle.BlockData[r, c].value == 1)
+                    {
+                        int realRow = r - puzzle.MaxRow + selectCol;
+                        int realCol = c - puzzle.MinCot + selectCol;
+                        if (realRow < 0 || realRow > 9 || realCol < 0 || realCol > 9)
+                        {
+                            return false;
+                        }
+                        if(DataCell[realRow,realCol].value == 1)
+                        {
+                            return false;
+                        }    
+                    }
+                }
+            }
+            return result;
+        }
+        public void InsertPuzzle(Puzzle puzzle, int selectRow, int selectCol)
+        {
+            for (int r = 0; r < puzzle.Rows; r++)
+            {
+                for (int c = 0; c < puzzle.Colums; c++)
+                {
+                    int realRow = r - puzzle.MaxRow + selectCol;
+                    int realCol = c - puzzle.MinCot + selectCol;
+                    r = realRow;
+                    c = realCol;
+                    puzzle.BlockData[r,c].value = DataCell[realRow,realCol].value;
+                }
+            }
+        }
     }
 }
 

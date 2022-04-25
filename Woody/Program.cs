@@ -20,14 +20,14 @@ namespace Woody
             {
                 if (NeedCreateNewBlocks(puzzles))
                 {
-                    // Tao BLock
+                    // Tao Puzzle
                     for (int i = 0; i < puzzles.Length; i++)
                     {
                         int index = (new Random()).Next() % listPuzzle.Count;
                         puzzles[i] = new Puzzle(listPuzzle[index]);
                     }
                 }
-
+                 
                 Console.Write("Nhap dong: ");
                 int row = int.Parse(Console.ReadLine());
                 Console.Write("Nhap cot: ");
